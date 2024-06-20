@@ -192,4 +192,10 @@ public final class StyledTextRenderer {
         return self
     }
 
+    @discardableResult
+    public func clearCaches() -> StyledTextRenderer {
+        sizeCache.clear()
+        bitmapCache.clear()
+        return self
+    }
 }
